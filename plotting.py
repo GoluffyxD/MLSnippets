@@ -20,3 +20,8 @@ plt.legend(['train', 'test'], loc='upper left')
 plt.show()
 
 
+# Multiple Plot
+pd.DataFrame(history.history).plot(figsize=(8, 5))
+plt.grid(True)
+plt.gca().set_ylim(0, 3) 
+plt.show()
